@@ -1,7 +1,15 @@
-def main():
-    print("你们好 from programmm!")
-    print(100*8+4*5)
+def fizz_buzz(n):
 
+    if n%3==0 and n%5==0:
+        answer="FizzBuzz"
+    elif n%3==0:
+        answer="Fizz"
+    elif n%5==0:
+        answer="Buzz"
+    else:
+        answer=str(n)
 
-if __name__ == "__main__":
-    main()
+    return answer
+
+number=fizz_buzz(int(input()))
+print(number)
